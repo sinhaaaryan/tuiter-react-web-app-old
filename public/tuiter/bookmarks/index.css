@@ -1,0 +1,94 @@
+.wd-border-color {
+    border-color: rgb(47, 51, 54);
+}
+
+
+.wd-page-default {
+    border-color: rgb(47, 51, 54);
+    padded-left: 16px;
+    border-radius: 50px;
+
+}
+
+
+
+.wd-padded-top {
+    padding-top: 12px;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-title-font-size {
+    font-size: 20px;
+}
+
+.wd-fg-color-light-grey {
+    color: lightgrey;
+}
+
+.wd-handle-one-font-size {
+    font-size: 13px;
+}
+
+.wd-border-line {
+    border-style: outset;
+    border-color: lightgrey;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-rounded-corners-all-around {
+
+    border-radius: 48px;
+    height: 48px;
+}
+
+.wd-handle-one-font-size-fifteen {
+    font-size: 15px;
+}
+
+.wd-padded-twelve {
+    padding: 2px;
+}
+
+.wd-photo-size {
+    width: 504px;
+    height: 264px;
+}
+
+.wd-rounded-corners-top {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.wd-color-red {
+    color: red;
+}
+
+.wd-position-twelve {
+    position: relative;
+    left: 12px;
+}
+
+.wd-position-two {
+    position: relative;
+    left: 24px;
+}
+
+.wd-position-three {
+    position: relative;
+    left: 36px;
+}
+
+.wd-position-four {
+    position: relative;
+    left: 48px;
+}
+
+.wd-color-black {
+    background-color: black;
+}

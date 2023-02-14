@@ -9,35 +9,35 @@
                 <ul>
                     <li class="list-group-item"><i class="fa-brands fa-twitter"></i></li>
                     <li class="list-group-item"><i class="fas fa-home"></i>
-                        <text>Home</text>
+                        <text class="d-xl-block col-1 d-none">Home</text>
                     </li>
                     <li class="list-group-item active">
                         <i class="fas fa-hashtag"></i>
-                        <text>Explore</text>
+                        <text class="d-xl-block col-1 d-none">Explore</text>
                     </li>
                     <li class="list-group-item">
                         <i class="fas fa-bell"></i>
-                        <text>Notifications</text>
+                        <text class="d-xl-block col-1 d-none">Notifications</text>
                     </li>
                     <li class="list-group-item">
                         <i class="fas fa-envelope"></i>
-                        <text>Messages</text>
+                        <text class="d-xl-block col-1 d-none">Messages</text>
                     </li>
                     <li class="list-group-item">
                         <i class="fas fa-bookmark"></i>
-                        <text>Bookmarks</text>
+                        <text class="d-xl-block col-1 d-none">Bookmarks</text>
                     </li>
                     <li class="list-group-item">
                         <i class="fas fa-list"></i>
-                        <text>Lists</text>
+                        <text class="d-xl-block col-1 d-none">Lists</text>
                     </li>
                     <li class="list-group-item">
                         <i class="fas fa-user"></i>
-                        <text>Profile</text>
+                        <text class="d-xl-block col-1 d-none">Profile</text>
                     </li>
                     <li class="list-group-item">
                         <i class="fa-ellipsis"></i>
-                        <text>More</text>
+                        <text class="d-xl-block col-1 d-none">More</text>
                     </li>
                 </ul>
                 <button type="button" class="btn rounded-pill btn-primary w-100">
@@ -79,7 +79,7 @@
                            href="sports.html">Sports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-none d-md-block"
+                        <a class="nav-link d-none d-md-block d-xl-block col-1 d-none"
                            style="color: deepskyblue"
                            href="entertainment.html">Entertainment</a>
                     </li>
@@ -150,63 +150,67 @@
             </li>
         </div>
         <div class="d-lg-4 d-lg-flex flex-column col-xxl-4">
-            <ul class="list-group">
-                <li class="list-group-item fw-bold">
-                    Who to follow
-                </li>
-                <li class="list-group-item d-flex">
-                    <img src="java.jpg" class="rounded-corner">
-                    <div class="ms-2">
-                        <text class="fw-bold">Java</text>
-                        <div class="text-secondary">@java</div>
-                    </div>
-                    <div class="ms-auto d-flex my-1">
-                        <button type="button" class="rounded-pill btn-primary">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex">
-                    <img src="space.jpg" class="rounded-circle">
-                    <div class="ms-2">
-                        <text class="fw-bold">Relativity Space</text>
-                        <div class="text-secondary">@relativityspace</div>
-                    </div>
-                    <div class="ms-auto d-flex my-1">
-                        <button type="button" class="rounded-pill btn-primary ">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex">
-                    <img src="virgin.jpg" class="rounded-circle">
-                    <div class="ms-2">
-                        <text class="fw-bold">Virgin Galactic</text>
-                        <div class="text-secondary">@virgingalactic</div>
-                    </div>
-                    <div class="ms-auto d-flex my-1">
-                        <button type="button" class="rounded-pill btn-primary ">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex">
-                    <img src="nasa.jpg" class="rounded-circle">
-                    <div class="ms-2">
-                        <text class="fw-bold">NASA</text>
-                        <div class="text-secondary">@NASA</div>
-                    </div>
-                    <div class="ms-auto d-flex my-1">
-                        <button type="button" class="rounded-pill btn-primary">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex">
-                    <img src="tesla.jpg" class="rounded-circle">
-                    <div class="ms-2">
-                        <text class="fw-bold">Tesla</text>
-                        <i class="fa-solid fa-circle-check ps-1"></i>
-                        <div class="text-secondary">@Tesla</div>
-                    </div>
-                    <div
-                            class="ms-auto d-flex my-1">
-                        <button type="button" class="rounded-pill btn-primary">Follow</button>
-                    </div>
-                </li>
-            </ul>
+            <div class="d-lg-block d-none">
+                <ul class="list-group">
+                    <li class="list-group-item fw-bold">
+                        Who to follow
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <img src="java.jpg" class="rounded-corner">
+                        <div class="ms-2">
+                            <text class="fw-bold">Java</text>
+                            <div class="text-secondary">@java</div>
+                        </div>
+                        <div class="ms-auto d-flex my-1">
+                            <button type="button" class="rounded-pill btn-primary">Follow</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <img src="space.jpg" class="rounded-circle">
+                        <div class="ms-2">
+                            <text class="fw-bold">Relativity Space</text>
+                            <div class="text-secondary">@relativityspace</div>
+                        </div>
+                        <div class="ms-auto d-flex my-1">
+                            <button type="button" class="rounded-pill btn-primary ">Follow</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <img src="virgin.jpg" class="rounded-circle">
+                        <div class="ms-2">
+                            <text class="fw-bold">Virgin Galactic</text>
+                            <div class="text-secondary">@virgingalactic</div>
+                        </div>
+                        <div class="ms-auto d-flex my-1">
+                            <button type="button" class="rounded-pill btn-primary ">Follow</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <img src="nasa.jpg" class="rounded-circle">
+                        <div class="ms-2">
+                            <text class="fw-bold">NASA</text>
+                            <div class="text-secondary">@NASA</div>
+                        </div>
+                        <div class="ms-auto d-flex my-1">
+                            <button type="button" class="rounded-pill btn-primary">Follow</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <img src="tesla.jpg" class="rounded-circle">
+                        <div class="ms-2">
+                            <text class="fw-bold">Tesla</text>
+                            <i class="fa-solid fa-circle-check ps-1"></i>
+                            <div class="text-secondary">@Tesla</div>
+                        </div>
+                        <div
+                                class="ms-auto d-flex my-1">
+                            <button type="button" class="rounded-pill btn-primary">Follow</button>
+                        </div>
+                    </li>
+                </ul>
+                <div/>
+
+
     </div>
     </div>
     </div>

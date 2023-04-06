@@ -2,7 +2,7 @@ import React from "react";
 
 const NavigationSidebar = (
     {
-        active = 'explore'
+        active = 'home'
     }
 ) => {
     return (

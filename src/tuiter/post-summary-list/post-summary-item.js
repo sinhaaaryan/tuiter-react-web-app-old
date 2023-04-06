@@ -21,6 +21,25 @@ const PostSummaryItem = (
                 <div className="col-2">
                     <img width={70} className="float-end rounded-3" src={`/images/${post.image}`}/>
                 </div>
+                <div>
+                    <div className="col-6">
+                        <i className="bi-chat">
+                            &#8205; 293
+                        </i>
+
+                        &#8205;
+                        &#8205;
+                        <i className="bi-arrow-repeat">
+                            &#8205; 520
+                        </i>
+                        &#8205;
+                        &#8205;
+
+                        <i class="bi-heart"></i> 69420
+
+                    </div>
+
+                </div>
             </div>
         </li>
     );

@@ -24,11 +24,11 @@ const tuitsSlice = createSlice({
                                    initialState: tuits,
                                    reducers: {
                                        deleteTuit(state, action) {
-                                           const index = state
-                                               .findIndex(tuit =>
+                                           const index = state.findIndex(tuit =>
                                                               tuit._id === action.payload);
                                            state.splice(index, 1);
                                        },
+
 
                                        createTuit(state, action) {
                                            state.unshift({
@@ -36,6 +36,18 @@ const tuitsSlice = createSlice({
                                                              ...templateTuit,
                                                              _id: (new Date()).getTime(),
                                                          })
+                                       },
+
+                                       increaseLike(state, action) {
+                                           const tuit = state.find(tuit => tuit._id === action.payload._id);
+                                           tuit.liked = !tuit.liked;
+                                           console.log(tuit.liked);
+                                           if (tuit.liked) {
+                                               tuit.likes = tuit.likes + 1;
+                                           }
+                                           else {
+                                               tuit.likes = tuit.likes - 1;
+                                           }
                                        }
                                    }
 
@@ -43,5 +55,5 @@ const tuitsSlice = createSlice({
 
 
 
-export const {createTuit, deleteTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit, increaseLike} = tuitsSlice.actions;
 export default tuitsSlice.reducer;

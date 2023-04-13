@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
 import React from "react";
 import {deleteTuit, increaseLike} from "./../tuits/tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 
 const TuitStats = ({tuitStats}) => {
@@ -26,11 +27,10 @@ const TuitStats = ({tuitStats}) => {
                 &#8205; &#8205; &#8205; &#8205; &#8205; &#8205; &#8205; &#8205; &#8205; &#8205;
             </i>
 
-            <button onClick={() => increaseLikeHandler(tuitStats)} className="bg-transparent border-0">
-                {tuitStats.liked ? (<i className="bi-heart" style={{color: "red"}}></i>) :  (
-                    <i className="bi-heart"></i>) }
-
-            </button>
+            <i className="bi bi-heart-fill me-2 text-danger" onClick={() => dispatch(updateTuitThunk({
+                                                                                                         ...tuitStats,
+                                                                                                         likes: tuitStats.likes + 1
+                                                                                                     }))}/>
             {tuitStats.likes}
 
 

@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
 const TUITS_API = `${API_BASE}/tuits`;
 
 // const TUITS_API = 'https://tuiter-node-server-app-cs1234-sp23.onrender.com/api/tuits';
